@@ -5,3 +5,4 @@ curl -LO "$URL"
 echo "Downloaded: $(basename $URL)"
 sudo pacman -U "$(basename $URL)"
 
+rm "$(basename $URL)"
